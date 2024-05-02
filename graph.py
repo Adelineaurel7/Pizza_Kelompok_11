@@ -26,3 +26,84 @@ graph = AdjacencyListGraph()
 graph.add_vertex("Banjarnegara")
 graph.add_vertex("Wonosobo")
 graph.add_vertex("Temanggung")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+graph.add_edge("Surakarta", "Pekalongan")
+graph.add_edge("Blora", "Rembang")
+graph.add_edge("Blora", "Pati")
+graph.add_edge("Blora", "Kudus")
+graph.add_edge("Blora", "Semarang")
+graph.add_edge("Blora", "Kendal")
+graph.add_edge("Blora", "Pekalongan")
+graph.add_edge("Rembang","Pati")
+graph.add_edge("Rembang", "Kudus")
+graph.add_edge("Rembang", "Semarang")
+graph.add_edge("Rembang", "Kendal")
+graph.add_edge("Rembang", "Pekalongan")
+graph.add_edge("Pati", "Kudus")
+graph.add_edge("Pati", "Semarang") 
+graph.add_edge("Pati", "Kendal")
+graph.add_edge("Pati", "Pekalongan")
+graph.add_edge("Kudus", "Semarang")
+graph.add_edge("Kudus", "Kendal")
+graph.add_edge("Kudus", "Pekalongan")
+graph.add_edge("Semarang", "Kendal")
+graph.add_edge("Semarang", "Pekalongan")
+graph.add_edge("Kendal", "Pekalongan")
+
+
+# Display the graph
+graph.display_graph()
