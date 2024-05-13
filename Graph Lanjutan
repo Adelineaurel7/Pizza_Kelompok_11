@@ -77,3 +77,32 @@ def tambahkanJalan(self, kota1, kota2, jarak):
                 if distances[city] < min_distance:
                     min_distance = distances[city]
                     closest_city = city
+
+
+            # Remove the closest city from unvisited list
+            unvisited_cities.remove(closest_city)
+
+            # Update distances to neighboring cities
+            for neighbor, weight in self.cityList[closest_city].items():
+                #jika jarak kota terdekat + weight lebih kecil dari jarak kota tetangga
+                distance = distances[closest_city] + weight
+                if distance < distances[neighbor]:
+                    distances[neighbor] = distance
+    
+      return distances
+    
+
+# Example usage with Dijkstra's algorithm:
+petaJawaTengah = WeightedGraph()
+petaJawaTengah.tambahkanKota("Banjarnegara")
+petaJawaTengah.tambahkanKota("Wonosobo")
+petaJawaTengah.tambahkanKota("Temanggung")
+petaJawaTengah.tambahkanKota("Salatiga")
+petaJawaTengah.tambahkanKota("Surakarta")
+petaJawaTengah.tambahkanKota("Blora")
+petaJawaTengah.tambahkanKota("Rembang")
+petaJawaTengah.tambahkanKota("Pati")
+petaJawaTengah.tambahkanKota("Kudus")
+petaJawaTengah.tambahkanKota("Semarang")
+petaJawaTengah.tambahkanKota("Kendal")
+petaJawaTengah.tambahkanKota("Pekalongan")
